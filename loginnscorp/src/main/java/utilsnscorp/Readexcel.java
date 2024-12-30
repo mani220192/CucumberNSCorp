@@ -19,6 +19,7 @@ public class Readexcel {
 		for (int j = 0; j < 2; i++) {
 			XSSFCell cell = row.getCell(j);
 			String userval = cell.getStringCellValue();
+			System.out.println(userval+" ");
 		} 
 	}
 	

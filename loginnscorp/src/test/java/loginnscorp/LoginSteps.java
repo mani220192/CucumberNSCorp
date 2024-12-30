@@ -9,6 +9,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.observer.ExtentObserver;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+
 public class LoginSteps {
 
     WebDriver driver;
@@ -45,6 +49,7 @@ public class LoginSteps {
         String actualUrl = driver.getCurrentUrl();
         assert actualUrl.equals(expectedUrl) : "User was not navigated to the home page. Actual URL: " + actualUrl;
     	
+    
     }
 
     // Step 5: And close the browser
